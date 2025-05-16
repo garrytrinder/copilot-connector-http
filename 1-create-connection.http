@@ -7,7 +7,7 @@ Content-Type: application/json
 Authorization: Bearer {{$aadV2Token appOnly}}
 
 {
-    "id": "marvelcharacters", 
+  "id": "marvelcharacters", 
 	"name": "Marvel Universe Characters",
 	"description": "Information about characters in the Marvel Universe."
 }

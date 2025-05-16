@@ -1,74 +1,74 @@
 {
-    "type": "AdaptiveCard",
-    "version": "1.3",
-    "body": [
+  "type": "AdaptiveCard",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
         {
-            "type": "ColumnSet",
-            "columns": [
-                {
-                    "type": "Column",
-                    "width": "auto",
-                    "items": [
-                        {
-                            "type": "Image",
-                            "url": "${iconUrl}",
-                            "size": "Small",
-                            "horizontalAlignment": "Center",
-                            "altText": "${title}"
-                        }
-                    ],
-                    "height": "stretch"
-                },
-                {
-                    "type": "Column",
-                    "width": 8,
-                    "items": [
-                        {
-                            "type": "TextBlock",
-                            "text": "[${title}](${url})",
-                            "color": "Accent",
-                            "size": "Medium",
-                            "weight": "Bolder"
-                        },
-                        {
-                            "type": "TextBlock",
-                            "spacing": "Small",
-                            "text": "${realName}",
-                            "isSubtle": true
-                        },
-                        {
-                            "type": "TextBlock",
-                            "text": "${description}",
-                            "wrap": true,
-                            "maxLines": 3,
-                            "spacing": "Medium"
-                        }
-                    ],
-                    "horizontalAlignment": "Center",
-                    "spacing": "Medium"
-                },
-                {
-                    "type": "Column",
-                    "width": 2,
-                    "items": [
-                        {
-                            "type": "Image",
-                            "url": "${iconUrl}",
-                            "altText": "${title}",
-                            "size": "Medium",
-                            "horizontalAlignment": "Right"
-                        }
-                    ]
-                }
-            ]
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "Image",
+              "url": "${iconUrl}",
+              "size": "Small",
+              "horizontalAlignment": "Center",
+              "altText": "${title}"
+            }
+          ],
+          "height": "stretch"
+        },
+        {
+          "type": "Column",
+          "width": 8,
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "[${title}](${url})",
+              "color": "Accent",
+              "size": "Medium",
+              "weight": "Bolder"
+            },
+            {
+              "type": "TextBlock",
+              "spacing": "Small",
+              "text": "${realName}",
+              "isSubtle": true
+            },
+            {
+              "type": "TextBlock",
+              "text": "${description}",
+              "wrap": true,
+              "maxLines": 3,
+              "spacing": "Medium"
+            }
+          ],
+          "horizontalAlignment": "Center",
+          "spacing": "Medium"
+        },
+        {
+          "type": "Column",
+          "width": 2,
+          "items": [
+            {
+              "type": "Image",
+              "url": "${iconUrl}",
+              "altText": "${title}",
+              "size": "Medium",
+              "horizontalAlignment": "Right"
+            }
+          ]
         }
-    ],
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-    "$data": {
-        "description": "Blinded in a childhood accident, attorney-at-law Matt Murdock protects Hell's Kitchen as the masked vigilante, Daredevil.",
-        "realName": "Matt Murdock",
-        "iconUrl": "https://cdn.marvel.com/content/1x/026ddm_com_crd_01.jpg",
-        "title": "Daredevil",
-        "url": "https://www.marvel.com/characters/daredevil/on-screen"
+      ]
     }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "$data": {
+    "description": "Blinded in a childhood accident, attorney-at-law Matt Murdock protects Hell's Kitchen as the masked vigilante, Daredevil.",
+    "realName": "Matt Murdock",
+    "iconUrl": "https://cdn.marvel.com/content/1x/026ddm_com_crd_01.jpg",
+    "title": "Daredevil",
+    "url": "https://www.marvel.com/characters/daredevil/on-screen"
+  }
 }

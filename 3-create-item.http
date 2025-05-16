@@ -185,7 +185,7 @@ Authorization: Bearer {{$aadV2Token appOnly}}
 
 {
 	"properties": {
-		"url": "https://www.marvel.com/characters/daredevil-matthew-murdock"
+    "url": "https://www.marvel.com/characters/daredevil-matthew-murdock"
 	}
 }
 
