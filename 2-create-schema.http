@@ -1,0 +1,65 @@
+# Create schema
+# https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-1.0&tabs=http
+# https://learn.microsoft.com/graph/connecting-external-content-manage-schema?context=%2Fmicrosoft-365-copilot%2Fextensibility%2Fcontext
+
+# @name createSchema
+PATCH https://graph.microsoft.com/v1.0/external/connections/marvelcharacters/schema
+Content-type: application/json
+Authorization: Bearer {{$aadV2Token appOnly}}
+
+{
+	"baseType": "microsoft.graph.externalItem",
+	"properties": [
+		{
+			"name": "title",
+			"type": "string",
+			"isQueryable": true,
+			"isSearchable": true,
+			"isRetrievable": true,
+			"labels": [
+				"title"
+			]
+		},
+		{
+			"name": "realName",
+			"type": "string",
+			"isQueryable": true,
+			"isSearchable": true,
+			"isRetrievable": true,
+		},
+		{
+			"name": "url",
+			"type": "string",
+			"isRetrievable": true,
+			"labels": [
+				"url"
+			]
+		},
+		{
+			"name": "iconUrl",
+			"type": "string",
+			"isRetrievable": true,
+			"labels": [
+				"iconUrl"
+			]
+		},
+		{
+			"name": "description",
+			"type": "string",
+			"isQueryable": true,
+			"isSearchable": true,
+			"isRetrievable": true
+		}
+	]
+}
+
+###
+
+# Get schema provisioning status
+# https://learn.microsoft.com/graph/api/externalconnectors-connectionoperation-get?view=graph-rest-1.0&tabs=http
+
+@operationStatusUrl = {{createSchema.response.headers.Location}}
+
+# @name getOperationStatus
+GET {{operationStatusUrl}}
+Authorization: Bearer {{$aadV2Token appOnly}}

@@ -1,0 +1,198 @@
+# Create external item
+# https://learn.microsoft.com/en-us/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-1.0&tabs=http
+
+# @name createItem
+PUT https://graph.microsoft.com/v1.0/external/connections/marvelcharacters/items/daredevil
+Content-type: application/json
+Authorization: Bearer {{$aadV2Token appOnly}}
+
+{
+  "acl": [
+    {
+      "type": "everyone",
+      "value": "everyone",
+      "accessType": "grant"
+    }
+  ],
+  "properties": {
+    "title": "Daredevil",
+	  "realName": "Matt Murdock",
+    "description": "Blinded in a childhood accident, attorney-at-law Matt Murdock protects Hell's Kitchen as the masked vigilante, Daredevil.",
+	  "url": "https://www.marvel.com/characters/daredevil-matthew-murdock",
+	  "iconUrl": "https://cdn.marvel.com/content/1x/026ddm_com_crd_01.jpg"
+  },
+  "content": {
+    "type": "text",
+	  "value": "## Shadow Boxing
+
+The son of professional boxer “Battlin” Jack Murdock, Matt Murdock was blinded at the age of nine when he pushed an old man out of the way of a runaway chemical truck. The incident caused the truck's hazardous substances to spill, splashing into Matt's eyes and taking his sight -- but there were other ramifications as well. Matt's hearing was amplified to abnormal levels. While he recovered in the hospital, he found he could hear almost everything happening nearby, even floors away.
+
+Matt kept his new abilities a secret and, over the next few months, he worked to control them so his heightened hearing didn't cause him pain. While studying in the gym where his father trained, Matt overhead local mobsters offering Jack some money to take a dive in his upcoming match with Carl Creel.
+
+Matt later listened to his dad's boxing bout against Creel on TV, elated that his dad fought back and won, but then worried when Jack never arrived home afterward. Matt headed to the gym to find him and learned his father had been gunned down in the street by the crooks he'd double crossed.
+
+Later, while living in Saint Agnes Orphanage, Matt developed a kinship with kind-hearted priest Father Lantom, who went on to become his mentor. Matt was also cared for by a nun named Maggie, whom Matt didn't know was actually his birth mother. During his time in the orphanage, Matt had nightmares so vivid that he'd scream out for help. Sister Maggie would always rush to his aid. One night, after calling out, Maggie didn't come to his bedside. He never asked for anything from her, or anyone, again. Matt became an angry boy who was constantly getting into fights. He believed God had granted him super hearing so he could listen in on people's prayers and aid them in whatever way they needed.
+
+Matt was then approached by an old blind man named Stick, who offered to train Matt to fight and use his exceptional hearing to become an unstoppable warrior. Over the new few months, Stick trained Matt, teaching him to hone his skills and control his emotions. However, Stick eventually abandoned his protégé after seeing Matt's inherent goodness as a sign of weakness.
+
+More than a decade later, Matt became a student at Columbia University Law School. There he met and became best friends with his roommate Franklin “Foggy” Nelson. At one point, Matt and Foggy crashed a fancy debutante's ball. Just when it seemed like they would be kicked out, a woman Matt had approached, Elektra Natchios, covered for him and said he belonged with her.
+
+Elektra, the privileged daughter of an ambassador, began a reckless whirlwind romance with Matt. At the time, he didn't know she was a former student of Stick's and that Stick was now using her to recruit Matt into the army of the Chaste, a group of soldiers who were locked in a centuries-long war with an insidious clan of brutal warriors known as “the Hand.”
+
+When their relationship started getting more serious, Elektra led Matt to a mansion, which Matt believed belonged to a friend of her family. Instead, it was test. Elektra presented Matt with a tied up and beaten Roscoe Sweeney, the man responsible for his dad's murder. She offered Matt the chance for retribution, saying he should kill Roscoe. Matt refused, unable to kill, and Elektra vanished from his life.
+
+After law school, both Matt and Foggy landed internships at the prestigious firm of Landman and Zack, but they both declined offers for a permanent position. Instead, they decided to open their own law firm, Nelson and Murdock, and use their talents to help underprivileged people battle greedy corporations.
+
+That very night, Matt heard his neighbor crying. She was the victim of domestic abuse at the hands of her father, but the law wouldn't rightfully punish him because of various loopholes. Wearing an eyeless mask and a hoodie, Matt tracked the man down to the trainyard he worked at and beat him to a pulp, offering a warning to never lay a hand on his daughter again. This started Matt's nighttime vigilantism and mornings of lying to Foggy about how he got random cuts and bruises.
+
+## Sight Beyond Sight
+
+Due to the mysterious toxic chemicals Matt was exposed to as a child, all of his senses are now amplified to super human levels, to the point where Matt can get a complete picture of not only everything around him, but everything in his vicinity up to hundreds of feet away. With heightened hearing, touch, smell, and balance, he can sense the slightest change in temperatures, vibrations, and wind, creating an “impressionistic painting” of the world around him in his mind, much like a bat's sonar.
+
+Matt's super-powered hearing allows him to listen to people's heartbeats and grab a sonar snapshot of any room through echolocation. Matt's sense of smell is so powerful he can detect everything from open wounds to a neighbor's cologne three floors away to what someone ate for lunch days ago. Meanwhile, his extraordinary equilibrium gives him perfect coordination, dexterity, and reflexes, making him one of the best hand-to-hand fighters in the entire world.
+
+## Defender of the Defenseless
+
+After the murder of his father, Matt picks up a potent disdain for the criminal element, along with a strong desire to protect those who are defenseless and being victimized by bullies — whether that bully is one person or an entire company.
+
+After becoming a vigilante, Matt makes enemies of behind-the-scenes crime boss Wilson Fisk, who attempts to raze portions of Hell's Kitchen, putting innocent lives in danger. Fisk's animosity toward Matt grows exponentially after Matt threatens to bring the law down on Vanessa, the woman Fisk loves. Now personal, Fisk targets Matt directly, and in the process discovers Matt is Daredevil.
+
+Matt also crosses paths numerous times with the Hand, a centuries-old supernatural clan with secret plans to unearth an ancient source of power.
+
+## Devil May Care
+
+Matt has very complex relationships, as his best friends Foggy Nelson and Karen Page struggle when Matt puts his life in danger as Daredevil. On the other hand, vigilante allies like Elektra and Stick wish for him to simply focus on being a warrior and abandon his life as Matthew Murdock.
+
+Matt and his best friend Foggy become inseparable through the years, carrying a friendship that extends beyond school and into their post-grad lives as lawyers. Opening a firm together, the two bring Karen Page in as an office manager and an invaluable third member of the firm. Eventually, Matt and Karen explore a tentative romance. However, Matt's friendship with both Foggy and Karen becomes strained due to his vigilantism, lying, and subsequent absenteeism from important cases.
+
+Matt's first great love, Elektra Natchios, is someone Matt is undeniably drawn to, but he is also continually in conflict with her thanks to her dark side and murderous tendencaies. The two have fought alongside one another and stood as enemies, even as their passion for one another lingers beneath the suface.
+
+Matt finds an important ally in Claire Temple, a nurse who helps mend him early on in his vigilante career.
+
+Though there is a lot of personality conflict among them, Matt teams up with fellow New York-based heroes Luke Cage, Danny Rand, and Jessica Jones to battle against the Hand.
+
+## The Devil of Hell's Kitchen
+
+Matt's life as a masked vigilante took a toll on him both physically and mentally. It also inadvertently caused him to cross paths with businessman Wilson Fisk's illegal plans, which would riddle the neighborhood with crime, drugs, and destruction.
+
+Right as Matt and Foggy were moving into their new Nelson and Murdock law office, Matt clashed with the Russian mob and threw a wrench into their sex trafficking operation. Unbeknownst to him, this drew him even closer to Fisk, as Fisk had partnered with the Russians for nefarious purposes.
+
+One of the firm's first cases involved defending Karen Page. A secretary for Union Allied Construction, she had been framed for the murder of a work colleague she'd hoped to speak to about a money laundering scheme she discovered within the company. After almost being killed by a corrupt cop while in jail, Karen stayed the night at Matt's apartment for protection.
+
+Karen snuck out to retrieve a hard drive from her apartment but was attacked by a killer sent from Union Allied. Matt followed her as the masked vigilante and saved her life. He then sent the hard drive to the New York Bulletin, along with the criminal who'd attacked Karen, and the next day it was front page news. Karen was cleared of all murder charges.
+
+The Russian mobsters who Matt had previously thwarted, Anatoly and Vladimir Ranskahov, set a trap for him by kidnapping a young boy and then waiting to ambush him when he came to rescue the kid. Matt defeated all the thugs who attacked him, but his severe injures left him helpless and unable to move. Matt was then discovered and brought to the apartment of Claire Temple, an off-duty ER nurse who mended him and inquired about his vigilantism, as well as how he could fight so well while being blind.
+
+Together, Matt and Claire interrogated a Russian hitman sent into Claire's building to find him, to get information about the young boy's actual location. Using extreme tactics, Matt learned of the boy's location. He mustered all his remaining strength to mount a solo rescue mission where he managed to defeat the crooks and save the boy.
+
+At work, while Matt fought to recover from his recent wounds, he and Foggy were approached by a man named James Wesley. Wesley asked them to defend John Healy, a man accused of murdering a mobster. They accepted, but when Matt realized Wesley had terrorized some of the jurors into freeing Healy, he fought Healy as the vigilante and got the name of Healy's employer: Wilson Fisk. Healy then killed himself, knowing it was better than what Fisk would do to him.
+
+After rescuing Claire from Russian gangsters, Matt learned his vigilante persona had been framed for the decapitation of Anatoly. At the same time, the firm was approached by an elderly woman, Elena Cardenas, seeking legal help against her landlord who was trying to evict her and a handful of other tenants. This is when Matt learned that essentially everything he was dealing with tied back to Fisk, from the Russians to the woman's building to a couple of corrupt police detectives.
+
+Matt then tried to take down Anatoly's surviving brother, Vladimir. He found himself uniting with Vladimir against a police force, most of whom were corrupt and were determined to take down the “masked vigilante,” leaving no witnesses alive within the building — all part of Fisk's design. Talking to Fisk via walkie-talkie, Matt was offered the chance to escape if he finished off the already-injured Vladimir. Matt refused and he and Vladimir evaded the police, with Vladimir revealing the name of Fisk's “money man” before he died.
+
+At this point, Matt's old mentor Stick returned to his life and informed him that the two of them needed to stop a mystical clan called “the Hand” and their secret “Black Sky” weapon. Matt agreed, as long as there was no killing. Stick disregarded this and killed the Black Sky, who turned out to be a young boy. Matt became so irate that the two fought inside Matt's apartment. Stick left Matt once again, disappointed in his lack of commitment toward fighting the Hand by any means necessary.
+
+Moving forward in his battle to expose Wilson Fisk, Matt fell into another trap after Cardenas, the elderly woman they were defending, was murdered. He vowed to track down her killers — namely Fisk, the man who owned the building. Walking right into the waiting arms of the Hand, Matt ferociously fought Hand leader Nobu Yoshioka and nearly died in the endeavor. Matt escaped before Fisk could finish him off.
+
+In the aftermath, with Matt near death and not reporting into work, Foggy discovered Matt was the masked neighborhood vigilante and felt betrayed by the lies. From here, it would take the combined efforts of Foggy, Karen, Claire, and a new armored suit manufactured by Fisk's tailor, Melvin Potter, to bring Matt back into fighting form. The murder of reporter Ben Urich, a friend and ally, also galvanized them to get back on track.
+
+After securing the testimony of corrupt cop Carl Hoffman, the team rejoiced as Wilson Fisk was arrested on multiple criminal conspiracy charges. Fisk escaped his police transport, determined to flee the country with his fiancé, but Matt, now as Daredevil, found Fisk and defeated him in an epic alleyway brawl.
+
+Some months later, with only Claire and Foggy knowing about Matt's secret life as Daredevil, the firm took on a client named Grotto, the only survivor of an attack that massacred the Irish mob. Through this intel, Matt started tracking the assailtant after learning he also attacked and killed a portion of a local biker gang. Matt eventually found ex-soldier Frank Castle, the shooter, and they battled on a rooftop. Castle escaped after shooting Matt in his armored mask.
+
+Matt then did his best to protect Grotto from Castle, who was out to kill everyone he felt was responsible for the gang-related deaths of his wife and children, but he eventually was captured by Castle and tied to a chimney. There, he and Castle debated the ethics of killing people and taking the law into one's own hands. Castle taped a gun to Matt's hand, pulled Grotto out of hiding, and said the only way to stop him from killing Grotto was for Matt to kill him. Matt escaped, but too late to save Grotto, as Castle killed him before fleeing the scene.
+
+Growing romantically closer to Karen, Matt continued to hunt for Castle, whom the media had dubbed The Punisher, eventually rescuing him after he was captured by an Irish mobster. With Castle now apprehended, Matt and Foggy decided, with Karen's urging, to defend Castle as his attorneys. It was during this time, while Matt was out on his first official date with Karen, that his old flame Elektra returned and started distracting him from his responsibilities as a lawyer, friend, and a suitor.
+
+Despite telling Elektra he had no interest in rekindling their old relationship because of his interest in Karen, Matt got mixed up with Elektra's dangerous schemes to thwart the Yakuza, fighting alongside her as Daredevil in order to prevent the Yakuza from gaining control of the property Fisk once owned for Nobu Yoshioka.
+
+Once again, Matt started to grow closer to Elektra, while simultaneously further apart from his friends, whom he continuously left in the lurch during the Punisher trial. Once Foggy found out Matt's after-hours work with Elektra had unintentionally led to a key witness' testimony being stricken from the record, he punched Matt in the face and demanded that Matt tell Karen about Elektra.
+
+Stick then returned to Matt's life. He saved Matt and Elektra during a ninja attack and tended to Elektra's post-battle wounds. Stick revealed his entire history with Elektra to Matt and then, in turn, explained the Chaste's vigilant battle against the Hand. Karen stopped by Matt's apartment and saw Elektra recovering in his bed, leading her to break off their already crumbling affair.
+
+In court, Frank Castle surprised everyone, especially his legal team, by confessing to the charges and getting purposely sent to prison. Once Matt learned Fisk was behind Castle's decision, he visited Fisk in prison and threatened to make sure that Fisk never saw his love, Vanessa, again. This enraged Fisk, who slammed Matt down on a table and threatened to ruin his entire life.
+
+When a warrior of the Hand broke into Matt's apartment, Matt witnessed Elektra coldly kill the soldier. Elektra explained that this was who she was and asked if he could accept it. She told him how she'd been killing for pleasure since she was 12 and even killed one of Stick's students. Meanwhile, Foggy asked Matt to dissolve the firm, no longer wanting to be partners.
+
+Matt discovered a Hand hideout called the Farm, where young children in cages were being drained of blood that was then fed into a large sarcophagus. It was here Matt once again fought Nobu Yoshioka, who had mysteriously returned from the dead. The kids were rescued and taken to Metro-General Hospital, where Claire worked.
+
+Matt rushed to help Claire after ninjas attacked Metro-General, following her discovery that the kids all contained a mysterious substance within them that was using their bodies as an incubator.
+
+While Karen tried her hand at reporting, Matt went on the hunt for the Blacksmith, an arms dealer who may have been responsible for the Central Park massacre that killed Frank Castle's family. Karen's work on the story placed her in danger, and Matt tried to protect her from harm by getting to the Blacksmith before things got out of hand. Matt found Castle instead, who was going after the Blacksmith himself. During a battle on a boat at a local pier, Castle appeared to die in an explosion.
+
+Matt was then roped back into Chaste business after he learned Elektra had plans to kill Stick as revenge for trying to kill her. Rescuing Stick from Nobu and the Hand, Matt was finally told that Elektra herself was the Black Sky, the secret weapon of the Hand. Elektra railed against her destiny and vowed to stop the Hand, swearing never to be their weapon.
+
+Outfitted with new armor and weaponry from Melvin Potter, Matt and Elektra rescued a number of hostages taken by the Hand, including Karen. In one final fight together, the duo fended off the Hand, aided by Frank Castle. Elektra sacrified her life to save Matt, leaving him grief-stricken. In trying to make amends, Matt revealed to Karen that he was Daredevil.
+
+Still mourning Elektra and mending his relationship with Karen, Matt quit vigilantism for several months - until an earthquake shook the city. Matt sprung back into action, saving locals from the ensuing chaos. The next day, Foggy gave Matt a case to work, which led Matt to Jessica Jones, who was being interrogated by Detective Misty Knight for stealing crime scene evidence.
+
+After facilitating her release, Matt followed Jessica, though she quickly turned the tables on him. She followed him and witnessed him leaping up the side of a building. Later, Matt tracked Jessica to the Hand's secret hideout, Midland Circle. Right then, Luke Cage and Danny Rand busted through a wall as they were attacked by Hand thugs, and the four of them fought off their enemies. It was here Matt discovered that Elektra, who seemed to have no memory of Matt, had been brought back to life and was now the Hand's weapon.
+
+After taking shelter inside a Chinese restaurant, Stick met up with the four heroes to explain the lore of the Hand and what, exactly, the organization sought: an ancient source of energy that could provide ever-lasting life. Matt warned the others not to trust Stick, but then Elektra and the Hand attacked them. Matt pulled Elektra aside and tried to get through to the goodness inside her, and she seemed to respond to his use of her name.
+
+After failing to get answers from a Hand leader they'd captured, Matt reluctantly revealed to Jessica, Danny and Luke that he knew Elektra, stating that she no longer remembered her old self. This revelation, plus disagreements over next steps, splintered the group. Not long after, Danny was kidnapped and the remaining three teamed up to invade Midland Circle for a rescue mission that would put an end to the Hand once and for all.
+
+The plan was to save Danny and then demolish the entire building with bombs, sealing up the caverns below in order to close up the source of life energy. As the group fought the Hand, Matt risked everything to try and get through to Elektra. He did eventually, but right as the building started to fall around both of them. Matt chose to remain with Elektra. They kissed as everyone else made it out to safety, and Matt and Elektra were presumed dead in the wake of the building's collapse.
+
+Daredevil (Matthew Murdock) battered and bruised in Defenders
+However, Matt survived the ordeal after falling into the sewers below. He washed up on a riverbank, where he feebly asked a passerby to find Father Lantom. Battered and near-death, Matt was taken to the orphanage he grew up in.
+
+Matt, now a physical wreck and unable to use his powers due to a damaged eardrum, believed God had forsaken him. Growing more bitter and depressed, Matt argued with Sister Maggie - who, like Father Lantom, had cared for him at the orphanage as a boy - about his true purpose, with Matt despairing that he was no longer able to be God's warrior. As his hearing improved, Lantom believed that sparring with a boxer might bring Matt's spirits back. It worked at first, but after getting hit in the head, Matt lost his hearing again and spiraled.
+
+Heading out onto the streets to stop crime in a variation of his old black outfit and mask, Matt thwarted thugs trying to kidnap and kill an Armenian real estate tycoon. While successful, Matt also gave into suicidal tendencies, asking the thugs to put him out of his misery when they overpowered him. Police sirens chased them off and Matt decided he could only be Daredevil now. Matt Murdock, as a person, no longer existed to him.
+
+Hearing that Fisk had been released from prison after cutting a deal with the FBI, Matt infiltrated the hotel that served as Fisk's prison-penthouse with designs on killing him. Matt, in a fragile mental state, argued with an imaginary Fisk over whether or not he'd actually break a commandment and murder his longtime foe.
+
+Deciding against it, Matt approached Foggy in a bar and revealed to him that he was still alive. Matt warned Foggy to stay away from Fisk, knowing he and Karen would also be working hard to send Fisk back to prison. He then told Foggy he was no longer the friend he knew, no longer Matt Murdock, and picked Foggy's pocket to obtain his Law ID so he could pretend to be Foggy during a trip to Rikers Island prison.
+
+At Rikers, Matt tracked down the head of the Armenian mob in an attempt to figure out why Fisk, as part of his deal, had ratted them out to the feds. While there, Matt discovered Fisk controlled a large portion of the prison's security and inmates, as he barely survived both an assassination attempt and a full scale riot. Before leaving, Matt learned Fisk's entire plan to become an FBI informant was staged from the beginning and that the inmate who'd attacked Fisk was paid to do so by Fisk.
+
+Escaping the riot, but succumbing to a knock-out drug he'd been laced with, Matt awoke in a speeding cab to find that the driver worked for Fisk. The driver jumped from the cab, letting the vehicle careen into the river. Matt escaped the sinking car, making his way to see Karen - who knew he was alive, thanks to Foggy -- to ask her for help in tracking down the inmate Fisk had paid off. His relationship with Karen and Foggy now strained, Matt agreed to help them both by turning himself into the FBI for questioning in exchange for the feds listening to the witness, Jasper Evans, reveal Fisk's plans.
+
+At the New York Bulletin offices, with the feds on their way to speak to both Matt and Jasper, an assassin wearing Daredevil's red costume - FBI Agent Ben Poindexter - attacked the offices, killing several reporters and Jasper. Matt attempted to stop him but was bested by Poindexter's formidable fighting skills and expert acumen at throwing projectiles.
+
+Matt, wounded from his fight with Poindexter, returned to the Clinton Church where he overheard Maggie confessing she was actually his real mother. Angry that Maggie and Lantom allow him to think he was an orphan after his father was killed, Matt stormed off. Focusing on the fake Daredevil, Matt tracked down Melvin Potter, realizing Fisk would have used him to make Poindexter's suit. It was all a trap, with Melvin having been intimidated into setting Matt up to take the fall as the “killer Daredevil.” With the FBI on their way, Matt battled Melvin, and then the two of them fended off the agents. Matt got away clean, but Melvin was arrested. Matt then begrudgingly warned Betsy, the woman Melvin loved, about Fisk going after her too.
+
+Now set on ending Fisk's reign once and for all, Matt broke into his penthouse with the intention of killing him. Had it not been for Karen being in danger and Matt hearing that Fisk was sending FBI agents to kill her back at the Clinton Church, Matt would have murdered Fisk. Arriving at the church, Matt once again fought Poindexter in an attempt to save Karen's life. Lantom leapt in front of a billy club Poindexter intended for Karen, saving her but sacrificing his own life. He died from his injuries, begging Matt for forgiveness in a whisper only Matt could hear. Matt and Karen then faced Poindexter together and stopped his onslaught.
+
+After Foggy and the NYPD's Brett Mahoney helped Karen escape the church by keeping her away from the corrupt FBI agents working for Fisk, Matt, Karen, and Foggy came up with a plan to take Fisk down legally, having realized that Agent Ray Nadeem - who was only working for Fisk due to blackmail - was ready to turn on him. Matt went to Nadeem's house that night, just in time to help Nadeem stop an attack from Fisk's hired hitmen. Nadeem agreed to testify the next day. Matt helped Nadeem get to the courthouse, with the two of them teaming up to take down armed Fisk assassins. However, Nadeem's confession failed because Fisk was able to rig the system - and the jury - from afar.
+
+Matt, now desperate to do things his way by killing Fisk, found out that Fisk had manipulated Poindexter into his service. Matt showed Poindexter that Fisk had murdered the woman he saw as his guiding light, Julie, so that Fisk himself could take over as his mentor. As a result, Poindexter wanted bloody revenge on Fisk, and Matt used Poindexter's warpath and security clearance to get back up into Fisk's penthouse, where Fisk was celebrating a rooftop wedding with Vanessa.
+
+In a three-man battle, Matt, Fisk, and Poindexter all fought, while Matt tried to keep Poindexter from killing Vanessa out of vengeance for Julie. Fisk defeated Poindexter, breaking his back, but Matt then physically bested Fisk. With his enemy at his mercy, Matt decided he could not and would not kill Fisk. Instead, he blackmailed Fisk, convincing him to willingly go back to prison and to cease all threats against Karen and Foggy - and to keep Matt's identity as Daredevil a secret - in order to protect Vanessa from being taken down for her participation in Fisk's crimes.
+
+Soon after, Matt attended the funeral for Father Lantom, where he made peace with Sister Maggie. Now in a better state of mind than he had been in quite a while, Matt fully reconciled with Karen and Foggy and the three of them discussed the idea of reforming their law firm with Karen now as the firm's lead investigator and third partner."
+  }
+}
+
+###
+
+# Get external item
+# https://learn.microsoft.com/graph/api/externalconnectors-externalitem-get?view=graph-rest-1.0&tabs=http
+
+# @name createItem
+GET https://graph.microsoft.com/v1.0/external/connections/marvelcharacters/items/daredevil
+Content-type: application/json
+Authorization: Bearer {{$aadV2Token appOnly}}
+
+# Update external item
+
+# @name updateItem
+PUT https://graph.microsoft.com/v1.0/external/connections/marvelcharacters/items/daredevil
+Content-type: application/json
+Authorization: Bearer {{$aadV2Token appOnly}}
+
+{
+	"properties": {
+		"url": "https://www.marvel.com/characters/daredevil-matthew-murdock"
+	}
+}
+
+###
+
+# Delete external item
+# https://learn.microsoft.com/en-us/graph/api/externalconnectors-externalitem-delete?view=graph-rest-1.0&tabs=http
+
+# @name deleteItem
+DELETE https://graph.microsoft.com/v1.0/external/connections/marvelcharacters/items/daredevil
