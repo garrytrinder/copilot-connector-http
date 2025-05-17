@@ -2,6 +2,9 @@
 # https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-1.0&tabs=http
 # https://learn.microsoft.com/graph/connecting-external-content-manage-schema?context=%2Fmicrosoft-365-copilot%2Fextensibility%2Fcontext
 
+# Note:
+# Schema defines the data shape of the metadata associated with the content to be created.
+
 # @name createSchema
 PATCH https://graph.microsoft.com/v1.0/external/connections/marvelcharacters/schema
 Content-type: application/json
@@ -57,6 +60,9 @@ Authorization: Bearer {{$aadV2Token appOnly}}
 
 # Get schema provisioning status
 # https://learn.microsoft.com/graph/api/externalconnectors-connectionoperation-get?view=graph-rest-1.0&tabs=http
+
+# Note:
+# The URL to get the operation status is returned in the Location header of the createSchema response. The process can take between 5-10 minutes to complete.
 
 @operationStatusUrl = {{createSchema.response.headers.Location}}
 

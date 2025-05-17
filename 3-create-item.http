@@ -1,6 +1,10 @@
 # Create external item
 # https://learn.microsoft.com/en-us/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-1.0&tabs=http
 
+# Note:
+# Pass the ACLs, properties and content in the request body to create the content in the connection. The ID of the item can be 
+# Access token must contain ExternalItem.ReadWrite.OwnedBy scope, or higher
+
 # @name createItem
 PUT https://graph.microsoft.com/v1.0/external/connections/marvelcharacters/items/daredevil
 Content-type: application/json
@@ -171,28 +175,7 @@ Soon after, Matt attended the funeral for Father Lantom, where he made peace wit
 # Get external item
 # https://learn.microsoft.com/graph/api/externalconnectors-externalitem-get?view=graph-rest-1.0&tabs=http
 
-# @name createItem
+# @name getItem
 GET https://graph.microsoft.com/v1.0/external/connections/marvelcharacters/items/daredevil
 Content-type: application/json
 Authorization: Bearer {{$aadV2Token appOnly}}
-
-# Update external item
-
-# @name updateItem
-PUT https://graph.microsoft.com/v1.0/external/connections/marvelcharacters/items/daredevil
-Content-type: application/json
-Authorization: Bearer {{$aadV2Token appOnly}}
-
-{
-	"properties": {
-    "url": "https://www.marvel.com/characters/daredevil-matthew-murdock"
-	}
-}
-
-###
-
-# Delete external item
-# https://learn.microsoft.com/en-us/graph/api/externalconnectors-externalitem-delete?view=graph-rest-1.0&tabs=http
-
-# @name deleteItem
-DELETE https://graph.microsoft.com/v1.0/external/connections/marvelcharacters/items/daredevil

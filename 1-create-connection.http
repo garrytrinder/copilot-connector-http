@@ -1,6 +1,10 @@
 # Create connection
 # https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0&tabs=http
 
+# Note:
+# id, name and description should be meaningful and representative of the content that is created in the connection
+# Access token must contain ExternalConnection.ReadWrite.OwnedBy scope, or higher
+
 # @name createConnection
 POST https://graph.microsoft.com/v1.0/external/connections 
 Content-Type: application/json
@@ -8,13 +12,6 @@ Authorization: Bearer {{$aadV2Token appOnly}}
 
 {
   "id": "marvelcharacters", 
-	"name": "Marvel Universe Characters",
+  "name": "Marvel Universe Characters",
 	"description": "Information about characters in the Marvel Universe."
 }
-
-# Delete connection
-# https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-delete?view=graph-rest-1.0&tabs=http
-
-# @name deleteConnection
-DELETE https://graph.microsoft.com/v1.0/external/connections/marvelcharacters
-Authorization: Bearer {{$aadV2Token appOnly}}

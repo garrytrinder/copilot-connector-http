@@ -1,0 +1,29 @@
+
+# Update external item
+# https://learn.microsoft.com/en-us/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-1.0&tabs=http
+
+# @name updateItem
+PUT https://graph.microsoft.com/v1.0/external/connections/marvelcharacters/items/daredevil
+Content-type: application/json
+Authorization: Bearer {{$aadV2Token appOnly}}
+
+{
+  "acl": [
+    {
+      "type": "everyone",
+      "value": "everyone",
+      "accessType": "grant"
+    }
+  ],
+	"properties": {
+    "url": "https://www.marvel.com/characters/daredevil-matthew-murdock"
+	}
+}
+
+###
+
+# Delete external item
+# https://learn.microsoft.com/en-us/graph/api/externalconnectors-externalitem-delete?view=graph-rest-1.0&tabs=http
+
+# @name deleteItem
+DELETE https://graph.microsoft.com/v1.0/external/connections/marvelcharacters/items/daredevil
