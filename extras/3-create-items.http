@@ -1,0 +1,118 @@
+PUT https://graph.microsoft.com/v1.0/external/connections/marvelcharacters/items/kingpin
+Content-type: application/json
+Authorization: Bearer {{$aadV2Token appOnly}}
+
+{
+  "acl": [
+    {
+      "type": "everyone",
+      "value": "everyone",
+      "accessType": "grant"
+    }
+  ],
+  "properties": {
+    "title": "Kingpin",
+	  "realName": "Wilson Fisk",
+    "description": "One of the most powerful criminals in New York City, Wilson Fisk rules the underworld with a signature blend of cruelty and charm.",
+	  "url": "https://www.marvel.com/characters/kingpin",
+	  "iconUrl": "https://cdn.marvel.com/content/1x/032kgp_com_crd_01.jpg"
+  },
+  "content": {
+    "type": "text",
+    "value": "## Young Wilson
+
+Born in Hell's Kitchen, Wilson was raised by a caring mother and a spiteful, abusive father. When Wilson was young, his dad, Bill, borrowed money from local mobsters so that he could run for the neighborhood's local council — but not with a desire to make things better in the city, only seeing it as a way to get rich.
+
+After losing the election, Bill grew physically, but even previous to that he was constantly berating young Wilson, while his mother warmly consoled the boy with food. In one instance, Bill forced Wilson to take a swig of whiskey and then mocked him while he gagged on it.
+
+In another example, Bill discovered that Wilson was being picked on by a neighbor named Bernie. Bill attacked Bernie and forced Wilson to join in the beat down in order to “prove that he was a man.”
+
+After losing the council seat, Bill blamed everyone around him — first and foremost Wilson's mother, Marlene, whom he began to beat during fits of drunken rage. During the beatings, Bill would force Wilson to go into another room and stare at a blank wall while he listened to his mother cry out in pain.
+
+One day, Wilson couldn't stand the beatings anymore and impulsively killed his father with a hammer. Knowing that locals would blame the criminals to whom Bill owed money, Marlene and Wilson cut up Bill's body and secretly dumped the parts in the river. Wilson's mom then sent him away to live on a farm with relatives.
+
+Following this, Wilson would spend many years abroad — particularly in Asia, learning to speak both Chinese and Japanese — before returning to New York as a successful businessman ready to bring brutal change to his old neighborhood.
+
+## Might Makes Right
+
+Though Fisk isn't considered an expert in any one method of fighting, his sheer size, explosively brutal nature, and muscle mass allows him to overpower most opponents. Fisk has been able to lift grown men up over his head with a single arm, along with killing people with his bare hands after only a few blows.
+
+Fisk is, for all intents and purposes, a genius plotter and orchestrator, always wanting to remain in the shadows, totally anonymous, while he pulls the strings from his secluded lairs. He's a “big picture” thinker who's willing and able to sacrifice many lives in the name of what he deems to be progress.
+
+After an incident with a gangster and a knife, Fisk employs designer Melvin Potter to make him a protective suit that looks like normal clothing, making him an even tougher target for attackers.
+
+## The Man in the Mask
+
+Wilson's first enemy was his own abusive father, whom he eventually brutally killed.
+
+Fisk's plans to take over Hell's Kitchen are plagued from the start by unruly elements within the mob, whom he's trying to buy out. Many of Fisk's own partners begin to doubt him after forming a relationship with Vanessa Marianna, leaving Leland Owlsley to make decisions based on this that ultimately mark him as an enemy of Fisk. Other allies turn against him.
+
+Fisk makes a direct enemy of the so-called Man in the Mask, who is secretly defense attorney Matt Murdock AKA Daredevil. It's both Daredevil and Matt Murdock whom Fisk sees as the agents of his downfall and Fisk vows vengeance on them. Fisk also comes to target Murdock's closest friends and allies, Foggy Nelson and Karen Page — even eventually ordering his men to kill Karen after revealing she was the one who killed his trust confidant, James Wesley.
+
+## Close Confidants
+
+Growing up, it was Wilson and his mother, Marlene, versus the world. Both victims of Bill Fisk's anger and abuse, they formed a tight bond and both vowed to keep Wilson's murder of Bill a secret.
+
+After being sent off to live with relatives, Fisk grows up very detached from the world and other people. Cultivating a protective and shy personality, Fisk uses his coldness to become wealthy in the world of business and finance. Fisk employs James Wesley as his outreach aid and comes to think of him, over time, as a close friend, though he has trouble expressing the feeling. As Fisk's right hand, Wesley is counted on for both counsel and contact with the outside world.
+
+For the sake of exacting his master plan to destroy and then rebuild Hell's Kitchen in the aftermath of The Battle of New York, Fisk aligns himself with local crime elements — including the mob, Madame Gao's Chinatown heroin operation, financier Leland Owlsley, and the Hand — though they are all just a means to an end. Among his cohorts, however, Fisk holds Gao in the highest regard.
+
+During his violent plot to revitalize and rebuild Hell's Kitchen, Fisk meets Vanessa Marianna, a local art dealer, and instantly falls for her. Desperately wanting to keep his criminal life a secret from her, Fisk goes to great lengths to avoid her knowing too many personal things about him. Eventually he's forced to show his hand; she accepts him , including his grand criminal schemes, endearing Vanessa to Fisk even more. He genuinely cares for her, and does everything in his ability to make Vanessa happy.
+
+After enacting a brilliant plan to not only spring himself from prison, but also get himself exonerated of all federal charges, Fisk and Vanessa reunite and form an even deeper alliance when she's fully brought in as part of his criminal operation. At the same time, Fisk manipulates an unstable, but lethally skilled, FBI agent named Benjamin Poindexter into becoming his personal assassin. Though Poindexter likes to think he's Fisk's new James Wesley, he's just another pawn in Fisk's army.
+
+## City Planning
+
+After many years away, Fisk returned home to New York, hell-bent on destroying the city that was once his home, so that it could be rebuilt into something better. Partnering with other major city crime syndicates, along with some corrupt members of the NYPD, Fisk began to exact his plot to take over dirty dealings within the city, including the securing of a building that the Hand wanted to own.
+
+Fisk, insistent that his participation in everything be secret and that no one meet in public, sought to take control of a cab company owned by  mob brothers Vladimir and Anatoly Ranskahov, who were in charge of distributing heroin manufactured by Madame Gao. Around the same time, a masked vigilante started to inadvertently thwart Fisk's plans for city control.
+
+On a first date with art dealer Vanessa Marianna, a woman he desperately wanted to impress, Fisk found himself confronted publicly by Anatoly, breaking not only Fisk's desire for anonymity, but his want and need to keep his criminal dealings a secret from Vanessa. Humiliated, and worried that Vanessa was scared off for good, Fisk murdered Anatoly by crushing his head in a car door — accidentally starting a war with brother Vladimir and angering his partners in crime.
+
+Trapping both Vladimir and the Man in the Mask inside a building, surrounded by cops and news media crews, Fisk set off a chain of bombs throughout Hell's Kitchen, destroying all remaining strongholds of the mob, in an attempt to level the area, defeat his rivals, and frame the vigilante. On a second date, Fisk and Vanessa watched the chaos unfold after he confessed to her his criminal dealings and intent to rebuild his childhood home. In a surprising turn of events, this act worked to drive Vanessa to his side like never before.
+
+After Nobu died trying to kill the Man in the Mask, and the vigilante escaped before Fisk could land kill him, Vanessa convinced Fisk to come out of his shell and go public with his intentions to renovate and resurrect Hell's Kitchen in the wake of the “vigilante” bombing it.
+
+Breaking his routine of solitude and isolation for Vanessa, Fisk further worried his remaining partners on crime. This led to Owlsley attempting to poison Vanessa with tainted champagne at a Fisk fundraiser. When Fisk discovered that it was Owlsley, and not the Hand or Gao, who tried to take what was most precious from him, he threw him down an elevator shaft.
+
+When Fisk learned that newspaper reporter Ben Urich had been contacting his mother in an attempt to dig up dirt about his past, Fisk broke into Urich's apartment and choked him to death with his bare hands.
+
+When one of the cops on Fisk's payroll flipped and divulged information to the FBI, aided by the law firm of Nelson and Murdock — and protected by the masked vigilante Daredevil when Fisk's goons tried to kill the man — Fisk was arrested for racketeering. Fisk, while handcuffed, proposed to Vanessa, who accepted, in full support of the man she loves despite his criminal ways. A few hours later, Fisk escaped the confines of his police escort with the intent of fleeing the country with Vanessa, but he was stopped by Daredevil, who now donned a new red suit designed by Fisk's own armorer, Melvin Potter.
+
+Humiliated, imprisoned, and with most of his assets on the outside seized, Fisk tried to keep a low profile and his head down while serving time at Rikers Island. A confrontation with a fellow prisoner named Dutton, who considered himself to be the “Kingpin of the Prison,” changed all this.
+
+Knowing that he had to act and could no longer exhibit good behavior in prison, Fisk plotted to take control of the prison from Dutton. Fisk asked his lawyer to financially help the families of prisoners on the outside, garnering him instant loyalty on the inside. The final piece of Fisk's plan fell into place when he read an article about the “Trial of The Punisher” and saw Frank Castle as a man who could help him get rid of Dutton for good.
+
+Getting word to Castle on the outside, Fisk promised Frank crucial intel about the day his family was murdered in Central Park in exchange for Frank confessing to all charges leveled against him and being sent to Rikers. Castle obliged, and once inside Fisk told him that he wanted Dutton dead — but that Dutton was also the one who had the information about Central Park. Fisk cleared a path for Castle to reach Dutton in a different cell block. After getting the information, Castle mortally wounded Dutton, but then found himself double-crossed by Fisk who wished to eliminate loose ends by trapping Castle in the prison wing filled with Dutton loyalists.
+
+Castle murdered his way out of the death trap and wound up in solitary. While there, Fisk visited him, now wholly impressed with his skills. Fisk helped Castle escape with the hope that he'd continue to kill criminals — Fisk's eventual competition — in New York. With Dutton dead, Fisk assumed control of the prison, extending his influence even further than Dutton had among the guards and inmates.
+
+While visiting Fisk in prison, to ask about his involvement in Frank Castle's escape, attorney Matt Murdock — who, unbeknownst to Fisk, had battled him as the masked vigilante Daredevil — angered Fisk when he threatened to use the law to keep Vanessa from ever re-entering the country again.
+
+Fisk flew into a rage, broke out of his restraints and slammed Murdock on a table, threatening to dismantle Murdock's entire life once he was free. Later, while plotting how to ruin the lives of Murdock and Foggy Nelson, Fisk began to suspect that Murdock and Daredevil were one and the same.
+
+Fisk continued to exert control from inside prison — using millions he had stashed away thanks to his lawyer Ben Donovan — to bribe and threaten the guards and the warden. His reach even extended to key members of the FBI, including Agent Tammy Hattley, whose daughter he had killed in a “car accident.” He also worked to control FBI Agent Ray Nadeem, by manipulating things so that Nadeem was in dire financial troubles and would therefore be desperate for career advancement and the accompanying money it would bring him and his family.
+
+Worried for Vanessa's safety, and ready to rise back up to the top of New York's criminal underworld, Fisk met with Nadeem and informed him he wanted to make a deal; Fisk would give up the criminal activities of mob families in New York in exchange for Vanessa's safety and freedom from prosecution. He then struck a deal with a fellow inmate, Jasper Evans, to fake an attempt on his life. Evans stabbed Fisk, making it seem like Fisk was no longer safe from the crooks he was informing on, and in exchange, Fisk used the warden to free Evans. 
+
+Having convinced Nadeem that he wasn't safe behind bars, Fisk was transferred into a penthouse suite of a hotel that he'd secretly bought months earlier. Thanks to a botched hit on the former owner of the hotel — a crime thwarted by Daredevil — and an armed-to-the-teeth hit squad sent to kill Fisk while on route to the hotel, the public learned of Fisk's deal with the FBI and outrage erupted. In the meantime, Fisk was intrigued by FBI Agent Benjamin “Dex” Poindexter, a phenomenal marksman who had single-handedly taken out all of the hit squad who attempted to kill Fisk. 
+
+Fisk soon discovered Matt Murdock was snooping into his activity again, and tried to have him killed during Matt's visit to Fisk's former prison. Fisk viewed what occurred on security cameras, seeing Matt's incredible physical skills in action as he fended off his attackers, which confirmed his suspicions that the blind lawyer was also Daredevil. 
+
+As he continued to claim he wasn't the criminal he'd been made out to be, Fisk decided to distract the city with a new scheme that would discredit both Matt and his vigilante identity as Daredevil. Naming Matt as his own former accomplice, and sending the FBI after him, Fisk simultaneously used the knowledge he'd gained about Poindexter's unstable and violent childhood to manipulate Dex into becoming his pawn.
+
+Fisk secretly sabotaged things with the woman Poindexter was obsessed with, Julie, and got Poindexter suspended from the FBI. He then convinced the vulnerable and damaged Poindexter to dress up like Daredevil and attack the offices of the New York Bulletin so that he could kill Jasper Evans, who was about to go public with Fisk's plans. With many focusing on the fake Daredevil attack, Fisk went forward with his plan to fully rise up as a free man, creating evidence he could use against Agent Nadeem that would frame him for murder, so that Nadeem too would be forced to submit to Fisk's rule.
+
+Fisk now operated with nearly every top agent in New York's FBI office in his pocket and used this power to make all the other local crime families subservient to him. The final steps in Fisk's plan were to get the FBI to drop all criminal charges and for Vanessa to return to him from overseas.
+
+Vanessa's return, while joyful at first, turned awkward quickly when she began to feel marginalized in the midst of Fisk's newfound power. At the same time, Fisk found himself rattled after a meeting with Karen Page; she told him  Karen telling him she was the one who had killed his colleague, and trusted friend, James Wesley. Fisk ordered Karen's death and sent Poindexter, again dressed as Daredevil, to take care of her. Matt, as Daredevil, stopped the attack, and together he and Karen managed to fend Poindexter off. An anguished Nadeem, deciding to do the right thing despite being Fisk's intimidation, helped the police rescue Karen and save her life.
+
+Nadeem's attempt to testify against Fisk was foiled after Fisk's fixer, Felix Manning, tampered with the grand jury. In an attempt to create a closer bond with Vanessa, Fisk revealed his entire operation to her, which she took to quickly, and eagerly – even personally ordering the death of Agent Nadeem before Fisk. Poindexter killed Nadeem that night, seemingly ending the final threat to Fisk. 
+
+Nadeem had recorded a video before his death though, detailing all of Fisk's schemes he'd been privy to and the names of the other agents he knew were compromised. Matt, meanwhile, revealed to Poindexter that Fisk had Julie killed in order to send him after Fisk. Elsewhere, Karen and Foggy made Nadeem's video public – something Fisk was rattled to discover in the midst of his happiest moment, as he danced with Vanessa at their wedding reception.
+
+The reception came to an abrupt halt as Poindexter arrived at the building, with Matt following behind his violent path of revenge. Fisk fought both Poindexter and Matt in their respective Daredevil costumes, as he desperately attempted to stop Poindexter from harming Vanessa. He was able to brutally subdue Poindexter, shattering his spine, but was ultimately bested himself by Matt.
+
+With the authorities on their way to arrest Fisk, Matt then threatened Wilson, telling him he must no longer try to harm Karen and Foggy. Fisk, on the other hand, said that he would keep Matt's identity as Daredevil a secret, in exchange for Matt making sure Vanessa didn't also go down for her role in Fisk's crime syndicate. Wishing to protect Vanessa above anything else, Fisk shook his enemy's hand and accepted the terms of their deal, shortly before he was taken into custody once again."
+  }
+}
