@@ -3,7 +3,8 @@
 # https://learn.microsoft.com/graph/connecting-external-content-manage-schema?context=%2Fmicrosoft-365-copilot%2Fextensibility%2Fcontext
 
 # Note:
-# Schema defines the data shape of the metadata associated with the content to be created.
+# Schema determines how content indexed, queried, and retrieved from the search index
+# Use semantic labels to improve queries. iconUrl, title, and url labels must be used for Microsoft 365 Copilot
 
 # @name createSchema
 PATCH https://graph.microsoft.com/v1.0/external/connections/marvelcharacters/schema
