@@ -2,8 +2,8 @@
 # https://learn.microsoft.com/en-us/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-1.0&tabs=http
 
 # Note:
-# Pass the ACLs, properties and content in the request body to create the content in the connection. The ID of the item can be 
-# Access token must contain ExternalItem.ReadWrite.OwnedBy scope, or higher
+# Pass the ACLs, properties and content in the request body to create the content in the connection. The ID of the item can be anything you like.
+# Content type can by text or HTML, 4MB content value limit
 
 # @name createItem
 PUT https://graph.microsoft.com/v1.0/external/connections/marvelcharacters/items/daredevil
