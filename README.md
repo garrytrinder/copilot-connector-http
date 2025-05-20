@@ -43,7 +43,7 @@ This repo demonstates how to create a custom Copilot connector for Microsoft 365
 1. Send the **getOperationStatus** request to check the status of the schema creation. When the status is `completed`, you can proceed to the next step. This can take up to 5-10 minutes.
 1. Open [3-create-item.http](3-create-item.http) file.
 1. Send the **createItem** request to create a new item in the external connection.
-1. Send the **getItem** reqquet to get the item you just created.
+1. Send the **getItem** request to get the item you just created.
 
 # Make external items searchable
 
