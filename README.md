@@ -55,7 +55,7 @@ This repo demonstates how to create a custom Copilot connector for Microsoft 365
 1. Find the external connection you created in the previous steps, select **Include Connector Results**.
 1. In the dialog, select **OK** to confirm.
 1. Navigate to [Microsoft 365](https://m365.cloud.microsoft/)
-1. In the search box, type <kbd>Daredevil</kbd> and press Enter.
+1. In the search box, type `Daredevil` and press Enter.
 1. You should see the item you created in the external connection in the search results.
 
 > [!NOTE]
